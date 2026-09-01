@@ -77,7 +77,7 @@ button {
 /* Layout  */
 
 .container {
-  max-width: 140rem;
+  max-width: 110rem;
   margin: auto;
 }
 
@@ -151,6 +151,7 @@ nav ul {
     background-color: #0d1212;
     width: 100%;
     box-shadow: rgba(255, 252, 252, 0.25) 0px 14px 28px;
+    z-index: 2;
   }
 
   .menu-mobile ul {
@@ -173,7 +174,7 @@ nav ul {
 .hero-section .container {
   padding: 3.2rem;
   margin: 9rem auto;
-  gap: 6.4rem;
+  gap: 6rem;
 }
 
 .paragraph {
@@ -213,6 +214,7 @@ nav ul {
 
 .section-about {
   margin: 0 auto 9rem auto;
+  padding: 3.2rem;
 }
 
 .gradient-cards {
@@ -315,6 +317,7 @@ nav ul {
   display: flex;
   gap: 2.4rem;
   align-items: center;
+  padding: 3.2rem;
 
   & .icon {
     color: #3a4ed5;
@@ -362,6 +365,9 @@ ul {
 .copyright-area {
   background: #202020;
   padding: 25px 0;
+  & .container {
+    padding: 0 3.2rem;
+  }
 }
 .copyright-text p {
   margin: 0;
@@ -390,6 +396,7 @@ country Card
 
 .country-card {
   margin-top: 3.2rem;
+  padding: 3.2rem;
 }
 .country-section {
   margin: 6.4rem auto 9.6rem auto;
@@ -410,6 +417,7 @@ country Card
 .country-details-card {
   max-width: 100%;
   margin: 6.4rem auto;
+  padding: 3.2rem;
   box-shadow: rgba(168, 163, 184, 0.15) 0px 48px 100px 0px;
 
   & .container-card {
@@ -447,6 +455,7 @@ country Card
   align-items: center;
   justify-content: space-between;
   margin-bottom: 3.2rem;
+  padding: 3.2rem;
 
   & .container-card {
     padding: 0.8rem 2.4rem;
@@ -456,12 +465,18 @@ country Card
   & input {
     font-family: "urbanist";
     font-size: 1.55rem;
+    padding: 1.3rem;
+    border-radius: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.8);
     border: 0.05rem solid #fff;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
   }
 
   & .select-section {
@@ -553,13 +568,25 @@ contact us Page ends here
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1124px) {
   .grid-four-cols {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 760px) {
+  .section-searchFilter {
+    flex-direction: column;
+    gap: 3rem;
+    & input {
+      width: 100%;
+    }
+    & div:last-child {
+      display: flex;
+      flex-direction: row;
+      gap: 1.2rem;
+    }
+  }
   .grid-four-cols,
   .grid-three-cols,
   .grid-two-cols {
