@@ -1,6 +1,9 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 export const HeroSection = () => {
+  const imagePath = `${import.meta.env.BASE_URL}images/worldimg.jpg`;
+
+  // console.log(imagePath);
   return (
     <main className="hero-section main">
       <div className="container grid grid-two-cols">
@@ -18,7 +21,7 @@ export const HeroSection = () => {
         </div>
         <div className="hero-img">
           <img
-            src={`${import.meta.env.BASE_URL}images/worldimg.jpg`}
+            src={imagePath}
             width="100%"
             alt="world image"
             className="banner-img"

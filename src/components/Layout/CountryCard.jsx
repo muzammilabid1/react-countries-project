@@ -8,7 +8,7 @@ export const CountryCard = ({ country }) => {
     <li className="country-card card">
       <div className="container-card bg-white-box">
         <img
-          src={flag.url_svg || "/images/akhzbiaflag.jpg"}
+          src={flag.url_svg || `${import.meta.env.BASE_URL}images/akhzbiaflag.jpg`}
           alt={flag.description || `flag of ${names.common}`}
         />
         <div className="countryInfo">

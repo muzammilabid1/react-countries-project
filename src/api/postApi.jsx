@@ -3,7 +3,7 @@ import axios from "axios";
 export const api = axios.create({
   baseURL: "https://api.restcountries.com/countries/v5",
   headers: {
-    Authorization: "Bearer rc_live_abfda6ba050f4adda51a0b5164b615d8",
+    Authorization: `Bearer ${import.meta.env.VITE_REST_COUNTRIES_API_KEY}`,
   },
 });
 export const getCountryData = () => {
