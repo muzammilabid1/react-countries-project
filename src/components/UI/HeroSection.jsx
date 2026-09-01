@@ -18,7 +18,7 @@ export const HeroSection = () => {
         </div>
         <div className="hero-img">
           <img
-            src="/images/worldimg.jpg"
+            src={`${import.meta.env.BASE_URL}images/worldimg.jpg`}
             width="100%"
             alt="world image"
             className="banner-img"
